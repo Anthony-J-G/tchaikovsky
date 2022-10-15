@@ -6,6 +6,9 @@ namespace tchai {
 
 		void RenderUI();
 
+		void SinusoidBuilderWindow();
+		void ShowBasicPlayer();
+
 		// void Dockable();
 	
 	

@@ -81,8 +81,6 @@
     <ClInclude Include="..\Dependencies\ImPlot\implot_internal.h">
       <Filter>sources</Filter>
     </ClInclude>
-    <ClInclude Include="src\Builder.h" />
-    <ClInclude Include="src\Player.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\misc\debuggers\imgui.natvis">

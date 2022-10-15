@@ -12,8 +12,6 @@
 #include <time.h>
 
 // Custom Headers
-#include "../Builder.h"
-
 
 double RandomGauss() {
     static double V1, V2, S;

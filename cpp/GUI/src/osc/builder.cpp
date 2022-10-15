@@ -1,10 +1,9 @@
 // Include Statements
 
 // Self Header Files
-#include "../Builder.h"
+#include "../App.h"
 
 // Custom Headers
-#include "../Player.h"
 #include "Oscillator.h"
 #include "Testing.h"
 
@@ -104,7 +103,7 @@ void tchai::GUI::SinusoidBuilderWindow() {
             break;
     }
 
-
+    double peak_ampl = 1;
     // Calculate Wave Function
     for (int i = 0; i < n; ++i) {
         float x = (float)i * 0.001f;
@@ -115,10 +114,14 @@ void tchai::GUI::SinusoidBuilderWindow() {
         float s = Sampling[sample_rate];
         float theta = (c / s) * frequency * t;
 
-        float y = sinf( theta + phase );
+        float y = AmpFunc.Render(x) * sinf( theta + phase );
 
         X1[i] = x;
         Y1[i] = y;
+
+        if (y > peak_ampl) {
+            peak_ampl = y;
+        }
     }
     
     // Calculate Amplitude Function
@@ -135,8 +138,7 @@ void tchai::GUI::SinusoidBuilderWindow() {
     flags |= ImPlotAxisFlags_Lock; // Set Flag to lock plot
     if (ImPlot::BeginPlot("Sine Waveform")) {
         ImPlot::SetupAxes("x", "y", flags, flags);
-        ImPlot::SetupAxesLimits(0, 1, -1.2, 1.75);
-
+        ImPlot::SetupAxesLimits(0, X1[n - 1], -peak_ampl, peak_ampl);
         ImPlot::PlotLine("Wave Function g(x)", X1, Y1, n);
         ImPlot::SetNextMarkerStyle(ImPlotMarker_Circle);
         ImPlot::PlotLine("Amplitude Function A(x)", X2, Y2, m);
