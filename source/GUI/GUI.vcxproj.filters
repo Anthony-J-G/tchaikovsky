@@ -4,14 +4,17 @@
     <Filter Include="imgui">
       <UniqueIdentifier>{20b90ce4-7fcb-4731-b9a0-075f875de82d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="sources">
+    <Filter Include="Source Files">
       <UniqueIdentifier>{f18ab499-84e1-499f-8eff-9754361e0e52}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fb2bfeb8-6944-480d-80f1-76ccd58b579f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Dependencies\Dear-ImGui\imgui.cpp">
       <Filter>imgui</Filter>
@@ -29,28 +32,28 @@
       <Filter>imgui</Filter>
     </ClCompile>
     <ClCompile Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_glfw.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_opengl3.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\osc\app.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Dependencies\ImPlot\implot.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Dependencies\ImPlot\implot_demo.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Dependencies\ImPlot\implot_items.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\osc\builder.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\osc\player.cpp">
-      <Filter>sources</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -63,23 +66,23 @@
     <ClInclude Include="..\Dependencies\Dear-ImGui\imgui_internal.h">
       <Filter>imgui</Filter>
     </ClInclude>
+    <ClInclude Include="src\App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_glfw.h">
-      <Filter>sources</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_opengl3.h">
-      <Filter>sources</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_opengl3_loader.h">
-      <Filter>sources</Filter>
-    </ClInclude>
-    <ClInclude Include="src\App.h">
-      <Filter>sources</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Dependencies\ImPlot\implot.h">
-      <Filter>sources</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Dependencies\ImPlot\implot_internal.h">
-      <Filter>sources</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
