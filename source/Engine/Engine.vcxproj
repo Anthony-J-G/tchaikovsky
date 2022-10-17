@@ -164,14 +164,6 @@
     <ClCompile Include="src\core\SoundSource.cpp" />
     <ClCompile Include="src\core\Testing.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Libsndfile\cmake\sndfile.vcxproj">
-      <Project>{9365eaf3-3fe8-3e09-a48c-a62c0458312c}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\OpenAL-Soft\build\OpenAL.vcxproj">
-      <Project>{79aa3baf-6ca9-3a2f-8cb1-0e03a65d820a}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
