@@ -74,20 +74,20 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)$(IntDir)</OutDir>
+    <OutDir>$(SolutionDir)..\build\$(IntDir)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)$(IntDir)</OutDir>
+    <OutDir>$(SolutionDir)..\build\$(IntDir)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)$(IntDir)</OutDir>
+    <OutDir>$(SolutionDir)..\build\$(IntDir)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)$(IntDir)</OutDir>
+    <OutDir>$(SolutionDir)..\build\$(IntDir)</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -95,7 +95,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)\Dependencies\OpenAL-Soft\include\;$(SolutionDir)Dependencies\Json-Cpp\include\;$(SolutionDir)Dependencies\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\Libsndfile\include;$(SolutionDir)..\libs\OpenAL-Soft\include\;$(SolutionDir)..\libs\Json-Cpp\include\;$(SolutionDir)..\libs\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -110,7 +110,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)\Dependencies\OpenAL-Soft\include\;$(SolutionDir)Dependencies\Json-Cpp\include\;$(SolutionDir)Dependencies\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\Libsndfile\include;$(SolutionDir)..\libs\OpenAL-Soft\include\;$(SolutionDir)..\libs\Json-Cpp\include\;$(SolutionDir)..\libs\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,7 +125,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)\Dependencies\OpenAL-Soft\include\;$(SolutionDir)Dependencies\Json-Cpp\include\;$(SolutionDir)Dependencies\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\Libsndfile\include;$(SolutionDir)..\libs\OpenAL-Soft\include\;$(SolutionDir)..\libs\Json-Cpp\include\;$(SolutionDir)..\libs\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,7 +140,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)\Dependencies\OpenAL-Soft\include\;$(SolutionDir)Dependencies\Json-Cpp\include\;$(SolutionDir)Dependencies\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\Libsndfile\include;$(SolutionDir)..\libs\OpenAL-Soft\include\;$(SolutionDir)..\libs\Json-Cpp\include\;$(SolutionDir)..\libs\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

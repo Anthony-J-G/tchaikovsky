@@ -68,22 +68,22 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
     <IncludePath>$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
     <IncludePath>$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
     <IncludePath>$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
     <IncludePath>$(IncludePath)</IncludePath>
   </PropertyGroup>
@@ -91,28 +91,30 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\include;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)Dependencies\Eigen\Eigen;$(SolutionDir)Dependencies\Json-Cpp\include;$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\Dear-ImGui\include;$(SolutionDir)..\libs\Dear-ImGui\backends;$(SolutionDir)..\libs\Dear-ImGui\libs\glfw\include;$(SolutionDir)..\libs\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)..\libs\Eigen\Eigen;$(SolutionDir)..\libs\Json-Cpp\include;$(SolutionDir)..\libs\Libsndfile\include;$(SolutionDir)..\libs\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)Dependencies\Json-Cpp;$(SolutionDir)Dependencies\Libsndfile;$(SolutionDir)Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\build\$(Platform)\$(Configuration)\;$(SolutionDir)..\libs\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)..\libs\Json-Cpp;$(SolutionDir)..\libs\Libsndfile;$(SolutionDir)..\libs\OpenAL-Soft</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;Engine.lib;jsoncpp.lib;sndfile.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\include;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)Dependencies\Eigen\Eigen;$(SolutionDir)Dependencies\Json-Cpp\include;$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\Dear-ImGui\include;$(SolutionDir)..\libs\Dear-ImGui\backends;$(SolutionDir)..\libs\Dear-ImGui\libs\glfw\include;$(SolutionDir)..\libs\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)..\libs\Eigen\Eigen;$(SolutionDir)..\libs\Json-Cpp\include;$(SolutionDir)..\libs\Libsndfile\include;$(SolutionDir)..\libs\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)Dependencies\Json-Cpp;$(SolutionDir)Dependencies\Libsndfile;$(SolutionDir)Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\build\$(Platform)\$(Configuration)\;$(SolutionDir)..\libs\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)..\libs\Json-Cpp;$(SolutionDir)..\libs\Libsndfile;$(SolutionDir)..\libs\OpenAL-Soft</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;Engine.lib;jsoncpp.lib;sndfile.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -121,18 +123,19 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\include;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)Dependencies\Eigen\Eigen;$(SolutionDir)Dependencies\Json-Cpp\include;$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\Dear-ImGui\include;$(SolutionDir)..\libs\Dear-ImGui\backends;$(SolutionDir)..\libs\Dear-ImGui\libs\glfw\include;$(SolutionDir)..\libs\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)..\libs\Eigen\Eigen;$(SolutionDir)..\libs\Json-Cpp\include;$(SolutionDir)..\libs\Libsndfile\include;$(SolutionDir)..\libs\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)Dependencies\Json-Cpp;$(SolutionDir)Dependencies\Libsndfile;$(SolutionDir)Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\build\$(Platform)\$(Configuration)\;$(SolutionDir)..\libs\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)..\libs\Json-Cpp;$(SolutionDir)..\libs\Libsndfile;$(SolutionDir)..\libs\OpenAL-Soft</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;Engine.lib;jsoncpp.lib;sndfile.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -141,18 +144,19 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\include;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)Dependencies\Eigen\Eigen;$(SolutionDir)Dependencies\Json-Cpp\include;$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\libs\Dear-ImGui\include;$(SolutionDir)..\libs\Dear-ImGui\backends;$(SolutionDir)..\libs\Dear-ImGui\libs\glfw\include;$(SolutionDir)..\libs\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)..\libs\Eigen\Eigen;$(SolutionDir)..\libs\Json-Cpp\include;$(SolutionDir)..\libs\Libsndfile\include;$(SolutionDir)..\libs\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)Dependencies\Json-Cpp;$(SolutionDir)Dependencies\Libsndfile;$(SolutionDir)Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\build\$(Platform)\$(Configuration)\;$(SolutionDir)..\libs\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)..\libs\Json-Cpp;$(SolutionDir)..\libs\Libsndfile;$(SolutionDir)..\libs\OpenAL-Soft</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;Engine.lib;jsoncpp.lib;sndfile.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
