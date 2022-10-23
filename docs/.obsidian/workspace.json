@@ -1,0 +1,149 @@
+{
+  "main": {
+    "id": "3e75133dacd0f510",
+    "type": "split",
+    "children": [
+      {
+        "id": "51d1f15e97859d71",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82f1553b8c766acb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documentaion/Waveform Generation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c2f72abb109510ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "367d654f28e82c38",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ac9950cab5eac23",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fa829b1de48a37e7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "48e6f8604134cb00",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dff21cbcdf81804a",
+    "type": "split",
+    "children": [
+      {
+        "id": "493f80a825d8555e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09b33151cb5949fe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "documentaion/Waveform Generation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d44e77146e224e13",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "documentaion/Waveform Generation.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "663cff70b339c309",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a0e6fcac7dc5afc5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "documentaion/Waveform Generation.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "82f1553b8c766acb",
+  "lastOpenFiles": [
+    "documentaion/Namespaces.md",
+    "documentaion/Waveform Generation.md",
+    "README.md",
+    "TODO.md"
+  ]
+}

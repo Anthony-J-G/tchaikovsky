@@ -1,6 +1,5 @@
-#include "../SoundSource.h"
+#include "../SoundBuffer.h"
 
-#include <iostream>
 
 
 SoundSource::SoundSource()

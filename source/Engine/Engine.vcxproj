@@ -151,17 +151,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\Oscillator.h" />
-    <ClInclude Include="src\SoundSource.h" />
     <ClInclude Include="src\SoundBuffer.h" />
     <ClInclude Include="src\Testing.h" />
-    <ClInclude Include="src\SoundDevice.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\core\amplitude.cpp" />
     <ClCompile Include="src\core\oscillator.cpp" />
-    <ClCompile Include="src\core\SoundDevice.cpp" />
-    <ClCompile Include="src\core\SoundBuffer.cpp" />
-    <ClCompile Include="src\core\SoundSource.cpp" />
+    <ClCompile Include="src\SoundBuffer\SoundDevice.cpp" />
+    <ClCompile Include="src\SoundBuffer\SoundBuffer.cpp" />
+    <ClCompile Include="src\SoundBuffer\SoundSource.cpp" />
     <ClCompile Include="src\core\Testing.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

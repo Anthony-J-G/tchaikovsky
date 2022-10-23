@@ -1,10 +1,4 @@
-#include "../SoundDevice.h"
-
-#include <AL/al.h>
-#include <stdio.h>
-
-
-
+#include "../SoundBuffer.h"
 
 
 

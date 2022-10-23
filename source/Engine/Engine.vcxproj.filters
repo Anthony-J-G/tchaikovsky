@@ -7,13 +7,13 @@
     <ClCompile Include="src\core\oscillator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\SoundBuffer.cpp">
+    <ClCompile Include="src\SoundBuffer\SoundBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\SoundDevice.cpp">
+    <ClCompile Include="src\SoundBuffer\SoundDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\SoundSource.cpp">
+    <ClCompile Include="src\SoundBuffer\SoundSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\core\Testing.cpp">
@@ -25,12 +25,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\SoundBuffer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\SoundDevice.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\SoundSource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Testing.h">

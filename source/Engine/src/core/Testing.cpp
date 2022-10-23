@@ -8,8 +8,6 @@
 #include <sndfile.h>
 #include <json/json.h>
 
-#include "../SoundDevice.h"
-#include "../SoundSource.h"
 #include "../SoundBuffer.h"
 #include "../Oscillator.h"
 

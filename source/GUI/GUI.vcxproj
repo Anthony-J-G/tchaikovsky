@@ -91,11 +91,11 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;C:\Dev\art\tchaikovsky\cpp\Dependencies\Eigen\Eigen;C:\Dev\art\tchaikovsky\cpp\Dependencies\Json-Cpp\include;C:\Dev\art\tchaikovsky\cpp\Dependencies\Libsndfile\include;C:\Dev\art\tchaikovsky\cpp\Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\include;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)Dependencies\Eigen\Eigen;$(SolutionDir)Dependencies\Json-Cpp\include;$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;C:\Dev\art\tchaikovsky\cpp\Dependencies\Json-Cpp;C:\Dev\art\tchaikovsky\cpp\Dependencies\Libsndfile;C:\Dev\art\tchaikovsky\cpp\Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)Dependencies\Json-Cpp;$(SolutionDir)Dependencies\Libsndfile;$(SolutionDir)Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;Engine.lib;jsoncpp.lib;sndfile.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
@@ -105,11 +105,11 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;C:\Dev\art\tchaikovsky\cpp\Dependencies\Eigen\Eigen;C:\Dev\art\tchaikovsky\cpp\Dependencies\Json-Cpp\include;C:\Dev\art\tchaikovsky\cpp\Dependencies\Libsndfile\include;C:\Dev\art\tchaikovsky\cpp\Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\include;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)Dependencies\Eigen\Eigen;$(SolutionDir)Dependencies\Json-Cpp\include;$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;C:\Dev\art\tchaikovsky\cpp\Dependencies\Json-Cpp;C:\Dev\art\tchaikovsky\cpp\Dependencies\Libsndfile;C:\Dev\art\tchaikovsky\cpp\Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)Dependencies\Json-Cpp;$(SolutionDir)Dependencies\Libsndfile;$(SolutionDir)Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;Engine.lib;jsoncpp.lib;sndfile.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
@@ -121,14 +121,14 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;C:\Dev\art\tchaikovsky\cpp\Dependencies\Eigen\Eigen;C:\Dev\art\tchaikovsky\cpp\Dependencies\Json-Cpp\include;C:\Dev\art\tchaikovsky\cpp\Dependencies\Libsndfile\include;C:\Dev\art\tchaikovsky\cpp\Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\include;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)Dependencies\Eigen\Eigen;$(SolutionDir)Dependencies\Json-Cpp\include;$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;C:\Dev\art\tchaikovsky\cpp\Dependencies\Json-Cpp;C:\Dev\art\tchaikovsky\cpp\Dependencies\Libsndfile;C:\Dev\art\tchaikovsky\cpp\Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)Dependencies\Json-Cpp;$(SolutionDir)Dependencies\Libsndfile;$(SolutionDir)Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;Engine.lib;jsoncpp.lib;sndfile.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <IgnoreSpecificDefaultLibraries>
@@ -141,14 +141,14 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;C:\Dev\art\tchaikovsky\cpp\Dependencies\Eigen\Eigen;C:\Dev\art\tchaikovsky\cpp\Dependencies\Json-Cpp\include;C:\Dev\art\tchaikovsky\cpp\Dependencies\Libsndfile\include;C:\Dev\art\tchaikovsky\cpp\Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\Dear-ImGui\include;$(SolutionDir)Dependencies\Dear-ImGui\backends;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\include;$(SolutionDir)Dependencies\ImPlot\;$(SolutionDir)\Engine\src;$(SolutionDir)Dependencies\Eigen\Eigen;$(SolutionDir)Dependencies\Json-Cpp\include;$(SolutionDir)Dependencies\Libsndfile\include;$(SolutionDir)Dependencies\OpenAL-Soft\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;C:\Dev\art\tchaikovsky\cpp\Dependencies\Json-Cpp;C:\Dev\art\tchaikovsky\cpp\Dependencies\Libsndfile;C:\Dev\art\tchaikovsky\cpp\Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)Dependencies\Dear-ImGui\libs\glfw\lib-vc2010-64;$(SolutionDir)Dependencies\Json-Cpp;$(SolutionDir)Dependencies\Libsndfile;$(SolutionDir)Dependencies\OpenAL-Soft</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;Engine.lib;jsoncpp.lib;sndfile.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <IgnoreSpecificDefaultLibraries>
@@ -156,34 +156,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Dependencies\Dear-ImGui\imgui.cpp" />
-    <ClCompile Include="..\Dependencies\Dear-ImGui\imgui_demo.cpp" />
-    <ClCompile Include="..\Dependencies\Dear-ImGui\imgui_draw.cpp" />
-    <ClCompile Include="..\Dependencies\Dear-ImGui\imgui_tables.cpp" />
-    <ClCompile Include="..\Dependencies\Dear-ImGui\imgui_widgets.cpp" />
-    <ClCompile Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_glfw.cpp" />
-    <ClCompile Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="..\Dependencies\ImPlot\implot.cpp" />
-    <ClCompile Include="..\Dependencies\ImPlot\implot_demo.cpp" />
-    <ClCompile Include="..\Dependencies\ImPlot\implot_items.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_demo.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="ImGui\imgui_tables.cpp" />
+    <ClCompile Include="ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="ImPlot\imgui_impl_glfw.cpp" />
+    <ClCompile Include="ImPlot\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="ImPlot\implot.cpp" />
+    <ClCompile Include="ImPlot\implot_demo.cpp" />
+    <ClCompile Include="ImPlot\implot_items.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\osc\app.cpp" />
-    <ClCompile Include="src\osc\builder.cpp" />
-    <ClCompile Include="src\osc\player.cpp" />
+    <ClCompile Include="src\osc\Render.cpp" />
+    <ClCompile Include="src\osc\Builder.cpp" />
+    <ClCompile Include="src\osc\Player.cpp" />
+    <ClCompile Include="src\osc\Viewport.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Dependencies\Dear-ImGui\imconfig.h" />
-    <ClInclude Include="..\Dependencies\Dear-ImGui\imgui.h" />
-    <ClInclude Include="..\Dependencies\Dear-ImGui\imgui_internal.h" />
-    <ClInclude Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_glfw.h" />
-    <ClInclude Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_opengl3.h" />
-    <ClInclude Include="..\Dependencies\Dear-ImGui\backends\imgui_impl_opengl3_loader.h" />
-    <ClInclude Include="..\Dependencies\ImPlot\implot.h" />
-    <ClInclude Include="..\Dependencies\ImPlot\implot_internal.h" />
     <ClInclude Include="src\App.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\misc\debuggers\imgui.natvis" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

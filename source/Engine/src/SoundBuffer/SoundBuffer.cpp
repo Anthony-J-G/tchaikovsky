@@ -1,8 +1,5 @@
-#pragma once
 #include "../SoundBuffer.h"
-#include "sndfile.h"
-#include <inttypes.h>
-#include <AL/alext.h>
+
 
 
 SoundBuffer* SoundBuffer::get() {
@@ -27,7 +24,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename) {
         fprintf(stderr, "Could not open audio in %s: %s\n", filename, sf_strerror(sndfile));
         return 0;
     }
-    if (sfinfo.frames < 1 || sfinfo.frames > (sf_count_t)(INT_MAX / sizeof(short)) / sfinfo.channels)
+    if (sfinfo.frames < 1 || sfinfo.frames >(sf_count_t)(INT_MAX / sizeof(short)) / sfinfo.channels)
     {
         fprintf(stderr, "Bad sample count in %s (%" PRId64 ")\n", filename, sfinfo.frames);
         sf_close(sndfile);
@@ -36,22 +33,18 @@ ALuint SoundBuffer::addSoundEffect(const char* filename) {
 
     /* Get the sound format, and figure out the OpenAL format */
     format = AL_NONE;
-    if (sfinfo.channels == 1)
+    if (sfinfo.channels == 1) {
         format = AL_FORMAT_MONO16;
-    else if (sfinfo.channels == 2)
+    } else if (sfinfo.channels == 2) {
         format = AL_FORMAT_STEREO16;
-    else if (sfinfo.channels == 3)
-    {
+    } else if (sfinfo.channels == 3) {
         if (sf_command(sndfile, SFC_WAVEX_GET_AMBISONIC, NULL, 0) == SF_AMBISONIC_B_FORMAT)
             format = AL_FORMAT_BFORMAT2D_16;
-    }
-    else if (sfinfo.channels == 4)
-    {
+    } else if (sfinfo.channels == 4) {
         if (sf_command(sndfile, SFC_WAVEX_GET_AMBISONIC, NULL, 0) == SF_AMBISONIC_B_FORMAT)
             format = AL_FORMAT_BFORMAT3D_16;
     }
-    if (!format)
-    {
+    if (!format) {
         fprintf(stderr, "Unsupported channel count: %d\n", sfinfo.channels);
         sf_close(sndfile);
         return 0;
@@ -61,8 +54,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename) {
     membuf = static_cast<short *>(malloc((size_t)(sfinfo.frames * sfinfo.channels) * sizeof(short)));
 
     num_frames = sf_readf_short(sndfile, membuf, sfinfo.frames);
-    if (num_frames < 1)
-    {
+    if (num_frames < 1) {
         free(membuf);
         sf_close(sndfile);
         fprintf(stderr, "Failed to read samples in %s (%" PRId64 ")\n", filename, num_frames);
@@ -82,8 +74,7 @@ ALuint SoundBuffer::addSoundEffect(const char* filename) {
 
     /* Check if an error occured, and clean up if so. */
     err = alGetError();
-    if (err != AL_NO_ERROR)
-    {
+    if (err != AL_NO_ERROR) {
         fprintf(stderr, "OpenAL Error: %s\n", alGetString(err));
         if (buffer && alIsBuffer(buffer))
             alDeleteBuffers(1, &buffer);
