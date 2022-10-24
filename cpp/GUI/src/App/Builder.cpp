@@ -95,7 +95,7 @@ void tchai::GUI::SinusoidWaveBuilder() {
 
     }
     if (clicked & 1) {
-        GUI::BasicPlayer();
+        // GUI::BasicPlayer();
 
     }
 

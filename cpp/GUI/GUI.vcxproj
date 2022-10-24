@@ -173,13 +173,15 @@
     <ClCompile Include="ImPlot\implot_demo.cpp" />
     <ClCompile Include="ImPlot\implot_items.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\osc\Render.cpp" />
-    <ClCompile Include="src\osc\Builder.cpp" />
-    <ClCompile Include="src\osc\Player.cpp" />
-    <ClCompile Include="src\osc\Viewport.cpp" />
+    <ClCompile Include="src\App\Render.cpp" />
+    <ClCompile Include="src\App\Builder.cpp" />
+    <ClCompile Include="src\App\Player.cpp" />
+    <ClCompile Include="src\App\Viewport.cpp" />
+    <ClCompile Include="src\State\State.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\App.h" />
+    <ClInclude Include="src\State.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

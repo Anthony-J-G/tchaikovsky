@@ -16,13 +16,13 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\osc\Render.cpp">
+    <ClCompile Include="src\App\Render.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\osc\Builder.cpp">
+    <ClCompile Include="src\App\Builder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\osc\Player.cpp">
+    <ClCompile Include="src\App\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ImGui\imgui.cpp">
@@ -61,7 +61,10 @@
     <ClCompile Include="ImPlot\implot_items.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\osc\Viewport.cpp">
+    <ClCompile Include="src\App\Viewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\State\State.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -69,5 +72,6 @@
     <ClInclude Include="src\App.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\State.h" />
   </ItemGroup>
 </Project>

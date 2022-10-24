@@ -117,7 +117,6 @@ void tchai::GUI::RenderUI() {
 
     ImGui::End(); // End
 
-    tchai::GUI::SinusoidWaveBuilder();
     tchai::GUI::Viewport();
 
 }
