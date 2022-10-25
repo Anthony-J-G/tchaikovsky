@@ -15,14 +15,14 @@ namespace tchai {
 	namespace core {
 
 		enum class AmplitudeType {
-			ConstantB=0,
-			RSigmoid,
-			GBubbles
+			ConstantB	= 0,
+			RSigmoid	= 1 << 0,
+			GBubbles	= 1 << 1
 		};
 
 
 		enum class OscillatorType {
-			Sinusoidal,
+			Sinusoidal	= 0,
 		};
 
 

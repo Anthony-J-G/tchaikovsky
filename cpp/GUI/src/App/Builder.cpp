@@ -6,7 +6,7 @@
 
 
 
-void tchai::GUI::SinusoidWaveBuilder() {
+void tchai::GUI::SinusoidWaveBuilder(std::vector<double> * test) {
 
     using namespace tchai;
 
@@ -95,6 +95,8 @@ void tchai::GUI::SinusoidWaveBuilder() {
 
     }
     if (clicked & 1) {
+        test->push_back((double)clicked);
+        clicked = 0;
         // GUI::BasicPlayer();
 
     }

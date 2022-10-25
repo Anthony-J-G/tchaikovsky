@@ -2,7 +2,7 @@
 
 
 
-void tchai::GUI::Viewport() {
+void tchai::GUI::Viewport(std::vector<double> * test) {
 
     const int n = 1001;
     const int m = 11;
@@ -13,6 +13,11 @@ void tchai::GUI::Viewport() {
 
 
     ImGui::Begin("Wave Viewport");
+
+
+    for (int i = 0; i < test->size(); i++) {
+        ImGui::Text(std::to_string(test->at(i)).c_str());
+    }
 /*
     // Calculate Wave Function
     for (int i = 0; i < n; ++i) {
