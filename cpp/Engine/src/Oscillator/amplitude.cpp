@@ -12,11 +12,17 @@
 namespace tchai {
 	namespace core {
 
+		Amplitude::Amplitude() {
+			Parameters = { 1 };
+			ampfunc = AmplitudeType::ConstantH;			
+
+		}
+
 		Amplitude::Amplitude(AmplitudeType amp_type, std::vector<double> Hyperparams) {
 			Parameters = Hyperparams;
 
 			// Hyper Parameter Assertions
-			if (amp_type == AmplitudeType::ConstantB) { TCHAI_ASSERT(Parameters.size() == 1, "Malformed parameters, ensure that when using 'ConstantB' type amplitude function that the total number of parameters is equal to 1"); } // Assert that the number of hyperparameters is 1
+			if (amp_type == AmplitudeType::ConstantH) { TCHAI_ASSERT(Parameters.size() == 1, "Malformed parameters, ensure that when using 'ConstantH' type amplitude function that the total number of parameters is equal to 1"); } // Assert that the number of hyperparameters is 1
 			if (amp_type == AmplitudeType::RSigmoid) { TCHAI_ASSERT(Parameters.size() == 4, "Malformed parameters, ensure that when using 'RSigmoid' type amplitudefunction that the total number of parameters is equal to 4"); } // Assert that the number of hyperparameters is 4
 			if (amp_type == AmplitudeType::GBubbles) { TCHAI_ASSERT(Parameters.size() == 4, "Malformed parameters, ensure that when using 'GBubbles' type amplitude function that the total number of parameters is equal to 4"); } // Assert that the number of hyperparameters is 4
 
@@ -29,7 +35,7 @@ namespace tchai {
 		}
 
 
-		double Amplitude::ConstantBreadth(int t) {
+		double Amplitude::ConstantHeights(int t) {
 			double A = Parameters[0];
 			return A;
 		}
@@ -73,8 +79,8 @@ namespace tchai {
 
 		double Amplitude::Render(int t) {
 			switch (ampfunc) {
-				case AmplitudeType::ConstantB:
-					return Amplitude::ConstantBreadth(t);
+				case AmplitudeType::ConstantH:
+					return Amplitude::ConstantHeights(t);
 
 				case AmplitudeType::RSigmoid:
 					return Amplitude::ReversedSigmoid(t);

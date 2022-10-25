@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="src\core\amplitude.cpp">
+    <ClCompile Include="src\Oscillator\amplitude.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\oscillator.cpp">
+    <ClCompile Include="src\Oscillator\oscillator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\SoundBuffer\SoundBuffer.cpp">
@@ -16,7 +16,7 @@
     <ClCompile Include="src\SoundBuffer\SoundSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\core\Testing.cpp">
+    <ClCompile Include="src\Oscillator\Testing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

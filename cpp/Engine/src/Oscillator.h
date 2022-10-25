@@ -15,7 +15,7 @@ namespace tchai {
 	namespace core {
 
 		enum class AmplitudeType {
-			ConstantB	= 0,
+			ConstantH	= 0,
 			RSigmoid	= 1 << 0,
 			GBubbles	= 1 << 1
 		};
@@ -29,10 +29,11 @@ namespace tchai {
 		// Amplitude Functions	
 		class Amplitude {
 		public:
+			Amplitude();
 			Amplitude(AmplitudeType type, std::vector<double> Hyperparams);
 			~Amplitude();
 
-			double ConstantBreadth(int t);
+			double ConstantHeights(int t);
 			double ReversedSigmoid(int t); // TODO
 			double GaussianBubbles(int t); // TODO
 
@@ -48,13 +49,19 @@ namespace tchai {
 		// Waveform Functions
 		class Oscillator {
 		public:
-			Oscillator(OscillatorType type, std::vector<double> Hyperparams);
+			Oscillator(OscillatorType type_, std::vector<double> Hyperparams_, Amplitude amp_func_);
 			~Oscillator();
 
 			double Sinusoid(int t);
 
+			double Render(int t);
+
+			OscillatorType GetWaveType();
+
 		private:
 			std::vector<double> Parameters;
+			OscillatorType wave_type;
+			Amplitude amp_func;
 
 		};
 

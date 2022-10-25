@@ -43,8 +43,10 @@ namespace wavfunc {
 namespace tchai {
 	namespace core {
 
-		Oscillator::Oscillator(OscillatorType type, std::vector<double> Hyperparams) {
-			Parameters = Hyperparams;
+		Oscillator::Oscillator(OscillatorType type_, std::vector<double> Hyperparams_, Amplitude amp_func_) {
+			Parameters = Hyperparams_;
+			wave_type = type_;
+			amp_func = amp_func_;
 
 		}
 
@@ -69,6 +71,16 @@ namespace tchai {
 
 			return func;
 
+		}
+
+		OscillatorType Oscillator::GetWaveType() {
+			return wave_type;
+		}
+
+
+		double Oscillator::Render(int t) {
+
+			return 0;
 		}
 
 

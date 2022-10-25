@@ -6,7 +6,7 @@
 
 
 
-void tchai::GUI::SinusoidWaveBuilder(std::vector<double> * test) {
+void tchai::GUI::SinusoidWaveBuilder(std::vector<tchai::core::Oscillator> * Waves) {
 
     using namespace tchai;
 
@@ -35,29 +35,31 @@ void tchai::GUI::SinusoidWaveBuilder(std::vector<double> * test) {
     ImGui::Separator();
 
     // Amplitude Function Parameter Variables
-
     const core::AmplitudeType FuncTypes[] = {
-        core::AmplitudeType::ConstantB, 
+        core::AmplitudeType::ConstantH, 
         core::AmplitudeType::RSigmoid,
         core::AmplitudeType::GBubbles,
     };
-    const char* Items2[] = { "Constant Breadth", "Reversed Sigmoid", "Gaussian Bubbles" };
+    const char* Items2[] = { "Constant Heights", "Reversed Sigmoid", "Gaussian Bubbles" };
     static int index = 0;
     static double AmpParams[] = {0.0f, 0.0f, 0.0f, 0.0f};
 
-    static core::Amplitude AmpFunc(core::AmplitudeType::ConstantB, {1});
+    static core::Amplitude AmpFunc(core::AmplitudeType::ConstantH, {1});
 
     ImGui::Text("Amplitude Parameters:");
     ImGui::Combo("Amplitude Function Type", &index, Items2, IM_ARRAYSIZE(Items2));
+    // Set Amplitude Function Type/Options
     switch (FuncTypes[index]) {
-        case core::AmplitudeType::ConstantB:
+        // If Constant Heights Amplitude is selected
+        case core::AmplitudeType::ConstantH:
             ImGui::InputDouble("Amplitude", &AmpParams[0], 0.5f, 1.0f, "%.3f");
             AmpFunc = core::Amplitude(
-                core::AmplitudeType::ConstantB,
+                core::AmplitudeType::ConstantH,
                 { AmpParams[0] }
             );
             break;
 
+        // If Reversed Sigmoid Amplitude is selected
         case core::AmplitudeType::RSigmoid:
             ImGui::InputDouble("a", &AmpParams[0], 1.0f, 1.0f, "%.3f");
             ImGui::InputDouble("b", &AmpParams[1], 10.0f, 1.0f, "%.3f");
@@ -70,6 +72,7 @@ void tchai::GUI::SinusoidWaveBuilder(std::vector<double> * test) {
             );
             break;
 
+        // If Gaussian Bubbles Amplitude is selected
         case tchai::core::AmplitudeType::GBubbles:
             ImGui::InputDouble("a",     &AmpParams[0], 1.0f, 1.0f, "%.3f");
             ImGui::InputDouble("b",     &AmpParams[1], 10.0f, 1.0f, "%.3f");
@@ -89,13 +92,14 @@ void tchai::GUI::SinusoidWaveBuilder(std::vector<double> * test) {
 
     static int clicked = 0;
     static float time = 0;
+    static core::Oscillator Osc(core::OscillatorType::Sinusoidal, {}, AmpFunc);
 
     if (ImGui::Button("Add To Wave Stack")) {
         clicked++;
 
     }
     if (clicked & 1) {
-        test->push_back((double)clicked);
+        Waves->push_back(Osc);                
         clicked = 0;
         // GUI::BasicPlayer();
 

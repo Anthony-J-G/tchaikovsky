@@ -28,13 +28,13 @@ namespace tchai {
 
 		void RenderUI();
 
-		void SinusoidWaveBuilder(std::vector<double>* test);
+		void SinusoidWaveBuilder(std::vector<tchai::core::Oscillator>* Waves);
 
 		void CompoundWaveBuilder();
 
 		void BasicPlayer();
 
-		void Viewport(std::vector<double>* test);
+		void Viewport(std::vector<tchai::core::Oscillator>* Waves);
 
 		// void Dockable();
 	

@@ -2,7 +2,7 @@
 
 
 
-void tchai::GUI::Viewport(std::vector<double> * test) {
+void tchai::GUI::Viewport(std::vector<tchai::core::Oscillator>* Waves) {
 
     const int n = 1001;
     const int m = 11;
@@ -15,8 +15,20 @@ void tchai::GUI::Viewport(std::vector<double> * test) {
     ImGui::Begin("Wave Viewport");
 
 
-    for (int i = 0; i < test->size(); i++) {
-        ImGui::Text(std::to_string(test->at(i)).c_str());
+    for (int i = 0; i < Waves->size(); i++) {
+
+        core::Oscillator osc = Waves->at(i);
+
+        switch (osc.GetWaveType()) {
+
+        case (core::OscillatorType::Sinusoidal):
+            ImGui::Text("Added Sinusoidal Wave");
+            break;
+
+        default:
+            break;
+        }
+
     }
 /*
     // Calculate Wave Function
@@ -64,4 +76,10 @@ void tchai::GUI::Viewport(std::vector<double> * test) {
 
     ImGui::End();
 
+}
+
+
+void render_table() {
+   
+    
 }
