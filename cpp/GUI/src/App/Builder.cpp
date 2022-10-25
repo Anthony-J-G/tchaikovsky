@@ -89,15 +89,15 @@ void tchai::GUI::SinusoidWaveBuilder(std::vector<tchai::core::Oscillator> * Wave
             break;
     }
 
-
     static int clicked = 0;
-    static float time = 0;
     static core::Oscillator Osc(core::OscillatorType::Sinusoidal, {}, AmpFunc);
 
     if (ImGui::Button("Add To Wave Stack")) {
-        clicked++;
+        clicked++; // Indicate button was pressed
 
     }
+
+    // Check to see if button was pressed & Wave is valid, then add it to the Build List
     if (clicked & 1) {
         Waves->push_back(Osc);                
         clicked = 0;
