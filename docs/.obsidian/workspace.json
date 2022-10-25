@@ -13,13 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "documentaion/Waveform Generation.md",
+                "file": "namespaces/Tchaikovsky.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "706fde0b3a72a8e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "namespaces/Tchaikovsky.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0c735ed560f8335f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "namespaces/Tchaikovsky.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d238f2f2afe4f004",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Waveform Generation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "26fbae0a502bdb22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "namespaces/GUI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "documentaion/Waveform Generation.md",
+                "file": "namespaces/GUI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "documentaion/Waveform Generation.md",
+                "file": "namespaces/GUI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "documentaion/Waveform Generation.md"
+                "file": "namespaces/GUI.md"
               }
             }
           }
@@ -139,10 +188,14 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "82f1553b8c766acb",
+  "active": "26fbae0a502bdb22",
   "lastOpenFiles": [
-    "documentaion/Namespaces.md",
-    "documentaion/Waveform Generation.md",
+    "namespaces/Playback.md",
+    "namespaces/Tchaikovsky.md",
+    "namespaces/Conductor.md",
+    "namespaces/Core.md",
+    "namespaces/GUI.md",
+    "Waveform Generation.md",
     "README.md",
     "TODO.md"
   ]
