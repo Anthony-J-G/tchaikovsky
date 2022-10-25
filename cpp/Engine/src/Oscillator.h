@@ -1,6 +1,11 @@
 #pragma once
 
+#define _USE_MATH_DEFINES
+
 #include <vector>
+#include <math.h>
+#include <stdio.h>
+#include <iostream>
 
 #define SAMPLE_RATE 96000
 #define BIT_DEPTH 16
