@@ -1,10 +1,6 @@
 # Ignore Local Data Files that have been generated and/or are not
 # immediately pertinent to the functionality of the project
 audio/
-instruments/
-
-# Ignore local auditing file
-anchor.json
 
 
 # Prerequisites
